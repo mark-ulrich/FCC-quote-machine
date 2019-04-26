@@ -6,7 +6,8 @@ import GenerateQuote from './GenerateQuote';
 export class QuoteBox extends Component {
   render() {
     // const { title } = this.props;
-    const { text, author } = this.props.quote;
+    const quote = this.props.quote;
+    const { text, author } = quote;
     return (
       <div id='quote-box'>
         {/* <h1 id='title'>{title}</h1> */}
@@ -23,7 +24,7 @@ export class QuoteBox extends Component {
           <p id='author'>-&nbsp;{author}</p>
         </div>
         <div className='bottom-container'>
-          <ShareLinks />
+          <ShareLinks quote={quote} />
           <GenerateQuote generateMethod={this.props.generateMethod} />
         </div>
       </div>
