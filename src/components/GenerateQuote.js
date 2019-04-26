@@ -10,7 +10,8 @@ export class GenerateQuote extends Component {
           id='new-quote'
           onClick={this.props.generateMethod}
         >
-          Next Quote
+          Next Quote&nbsp;&nbsp;
+          <i className='fas fa-arrow-circle-right' />
         </button>
       </div>
     );

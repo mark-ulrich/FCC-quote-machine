@@ -30,7 +30,7 @@ body {
     border-bottom: 2px solid #777; }
     #quote-box .quote .quotation-mark {
       font-family: 'Courier New', Courier, monospace;
-      font-size: 1.7rem;
+      font-size: 1.4rem;
       white-space: pre; }
     #quote-box .quote .begin-quotation-mark {
       margin-left: -2.6rem;
@@ -40,7 +40,8 @@ body {
     #quote-box .quote #text {
       font-size: 2em;
       line-height: 2.3rem;
-      text-shadow: 1px 1px 2px #c3cadb; }
+      text-shadow: 1px 1px 2px #c3cadb;
+      font-family: 'Dancing Script', 'Times New Roman', serif; }
     #quote-box .quote #author {
       float: right;
       font-size: 1.3em;
