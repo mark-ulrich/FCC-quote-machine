@@ -54,6 +54,10 @@ export class App extends Component {
     index: 0
   };
 
+  componentDidMount() {
+    this.generateQuote();
+  }
+
   generateQuote = () => {
     // Generate a random index
     let index = Math.floor(Math.random() * this.state.quotes.length);

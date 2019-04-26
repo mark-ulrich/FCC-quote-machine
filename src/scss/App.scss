@@ -1,3 +1,7 @@
+$primary_color: #283044;
+$secondary_color: #ebf5ee;
+$border_color: #8b786d;
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +10,7 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   // background: #306f5a;
-  background: #227070;
+  background: $primary_color;
   color: #333;
 }
 
@@ -18,11 +22,14 @@ body {
 }
 
 #quote-box {
-  background: #aaa;
-  border: 2px #333 solid;
+  background: $secondary_color;
+  border: 2px $border_color solid;
   border-radius: 4px;
   padding: 0.5em 1em;
+  // margin: 0 2rem;
   margin: 0 2rem;
+
+  box-shadow: 1px 1px 10px 1px #8b786d;
 
   #title {
     text-align: center;
@@ -31,23 +38,14 @@ body {
     font-weight: 400;
   }
 
-  .btn {
-    background: #333;
-    color: #ddd;
-    border: 2px #111 solid;
-    border-radius: 4px;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-  }
-
   .quote {
     padding: 1rem 3rem 2.7rem 3rem;
     border-bottom: 2px solid #777;
 
     .quotation-mark {
       font-family: 'Courier New', Courier, monospace;
-      font-size: 2.5rem;
+      font-size: 1.7rem;
+      white-space: pre;
     }
     .begin-quotation-mark {
       margin-left: -2.6rem;
@@ -58,6 +56,8 @@ body {
     }
     #text {
       font-size: 2em;
+      line-height: 2.3rem;
+      text-shadow: 1px 1px 2px lighten($primary_color, 60);
     }
     #author {
       float: right;
@@ -68,26 +68,95 @@ body {
   }
 
   .bottom-container {
-    padding: 1rem 1rem 0.2rem 1rem;
+    padding: 1rem 5rem 0.2rem 5rem;
     max-width: 100%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
 
     .share-links {
-      background: #333;
-      padding: 0.3em;
-      border-radius: 6px;
+      margin-top: 0.5rem;
       a {
-        color: #cccccc;
+        background: $primary_color;
+        color: $secondary_color;
+        border: 2px $border_color solid;
+        border-radius: 6px;
+
+        padding: 1.1rem 0.6rem 0.5rem 0.8rem;
+        vertical-align: center;
+
+        &:hover {
+          background: #ebf5ee;
+          color: $primary_color;
+
+          transition: all 0.2s ease-out;
+        }
       }
+    }
+  }
+
+  .btn {
+    background: $primary_color;
+    color: $secondary_color;
+    border: 2px $border_color solid;
+    border-radius: 4px;
+    padding: 0.7rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+    font-weight: 400;
+    &:hover {
+      background: #ebf5ee;
+      color: $primary_color;
+
+      transition: all 0.3s ease-in-out;
+      font-weight: 600;
     }
   }
 }
 
 .footer {
+  color: #78a1bb;
   text-align: center;
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   margin-top: 1em;
+}
+
+@media screen and (max-width: 476px) {
+  #quote-box {
+    .quote {
+      #text {
+        font-size: 1.3em;
+      }
+      #author {
+        font-size: 1.1em;
+      }
+      .quotation-mark {
+        font-size: 0.8em;
+      }
+    }
+    .bottom-container {
+      .share-links {
+        margin-top: 1em;
+        font-size: 0.7em;
+      }
+      .btn {
+        font-size: 0.8em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #quote-box {
+    .quote {
+      .begin-quotation-mark {
+        margin-right: 0.5rem;
+      }
+    }
+    .bottom-container {
+      padding: 1em;
+    }
+  }
 }

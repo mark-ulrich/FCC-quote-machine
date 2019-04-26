@@ -12,9 +12,13 @@ export class QuoteBox extends Component {
         {/* <h1 id='title'>{title}</h1> */}
         <div className='quote'>
           <p id='text'>
-            <span className='begin-quotation-mark quotation-mark'>"</span>
+            <span className='begin-quotation-mark quotation-mark'>
+              <i className='fa fa-quote-left' />
+            </span>
             {text}
-            <span className='quotation-mark end-quotation-mark'>"</span>
+            <span className='quotation-mark end-quotation-mark'>
+              <i className='fa fa-quote-right' />
+            </span>
           </p>
           <p id='author'>-&nbsp;{author}</p>
         </div>
