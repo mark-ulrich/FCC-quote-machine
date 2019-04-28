@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/FCC-quote-machine/static/css/main.596ad8d0.chunk.css",
-    "main.js": "/FCC-quote-machine/static/js/main.1659bc73.chunk.js",
-    "main.js.map": "/FCC-quote-machine/static/js/main.1659bc73.chunk.js.map",
-    "runtime~main.js": "/FCC-quote-machine/static/js/runtime~main.e56c3af7.js",
-    "runtime~main.js.map": "/FCC-quote-machine/static/js/runtime~main.e56c3af7.js.map",
-    "static/js/2.d6a534e5.chunk.js": "/FCC-quote-machine/static/js/2.d6a534e5.chunk.js",
-    "static/js/2.d6a534e5.chunk.js.map": "/FCC-quote-machine/static/js/2.d6a534e5.chunk.js.map",
-    "index.html": "/FCC-quote-machine/index.html",
-    "precache-manifest.811eee30b8269fd2982370c008858813.js": "/FCC-quote-machine/precache-manifest.811eee30b8269fd2982370c008858813.js",
-    "service-worker.js": "/FCC-quote-machine/service-worker.js",
-    "static/css/main.596ad8d0.chunk.css.map": "/FCC-quote-machine/static/css/main.596ad8d0.chunk.css.map"
+    "main.css": "/fcc-quote-machine/static/css/main.596ad8d0.chunk.css",
+    "main.js": "/fcc-quote-machine/static/js/main.1659bc73.chunk.js",
+    "main.js.map": "/fcc-quote-machine/static/js/main.1659bc73.chunk.js.map",
+    "runtime~main.js": "/fcc-quote-machine/static/js/runtime~main.b8108d64.js",
+    "runtime~main.js.map": "/fcc-quote-machine/static/js/runtime~main.b8108d64.js.map",
+    "static/js/2.d6a534e5.chunk.js": "/fcc-quote-machine/static/js/2.d6a534e5.chunk.js",
+    "static/js/2.d6a534e5.chunk.js.map": "/fcc-quote-machine/static/js/2.d6a534e5.chunk.js.map",
+    "index.html": "/fcc-quote-machine/index.html",
+    "precache-manifest.a2bd892f2460753ec9f98009173e4b4a.js": "/fcc-quote-machine/precache-manifest.a2bd892f2460753ec9f98009173e4b4a.js",
+    "service-worker.js": "/fcc-quote-machine/service-worker.js",
+    "static/css/main.596ad8d0.chunk.css.map": "/fcc-quote-machine/static/css/main.596ad8d0.chunk.css.map"
   }
 }
